@@ -1,0 +1,23 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* CSS variables */
+:root {
+    --primary-font: "Gruppo", sans-serif; 
+    --secondary-font: "Nunito", sans-serif;
+    --primary-color: #4ddbdb;
+    --secondary-color: #f3e9dc;
+    --highlight-color: #5e3023;
+}
+
+
+body {
+    font-family: var(--primary-font);
+    background: linear-gradient(135deg, #4ddbdb;);
+    color: #ffffff;
+    align-items: center;
+    justify-content; center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
