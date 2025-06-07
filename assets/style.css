@@ -31,3 +31,21 @@ body {
     backdrop-filter: blur(10px);
     animation: fadeIn 2s ease-in-out;
 }
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-shadow: 0 0 2px ;
+}
+
+.options button {
+    font-size: 3rem;
+    color: var(--secondary-color) ;
+    background: linear-gradient(135deg, #ff6f61, #ffcc00);
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 111, 978, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
