@@ -49,3 +49,26 @@ h1 {
     box-shadow: 0 0 15px rgba(255, 111, 978, 0.5);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.options button:hover {
+    box-shadow: 0 0 25px rgba(255, 111, 97, 0.8);
+    transform: scale(1:1);
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin: 10px 0;
+}
+
+#result-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+    animation: glow 1.5s infinite alternate;
+}
