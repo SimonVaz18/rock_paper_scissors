@@ -11,5 +11,13 @@ buttons.forEach((button) => {
 
         userChoiceDisplay.textContent = `Your choice: ${userChoice}`;
         computerChoiceDisplay.textContent = `Computer's choice: ${computerChocie}`;
-    })
-})
+
+        const result = decideWinner(userChoice, computerChoice);
+        resultText.textContent = result;
+
+        resultText.style.animation = "none";
+        setTimeout(() => {
+            resultText.style.animation = "glow 1.5s infinite alternate";
+        }, 10);
+    });
+});
