@@ -13,10 +13,10 @@
 
 body {
     font-family: var(--primary-font);
-    background-color: linear-gradient(135deg, #1e1e2f, #212140;);
+    background: linear-gradient(135deg, #1e1e2f, #212140;);
     color: var(--primary-color);
     align-items: center;
-    justify-content; center;
+    justify-content: center;
     margin: 0;
     height: 100vh;
     overflow: hidden;
@@ -52,7 +52,7 @@ h1 {
 
 .options button:hover {
     box-shadow: 0 0 25px rgba(255, 111, 97, 0.8);
-    transform: scale(1:1);
+    transform: scale(1.1);
 }
 
 .result {

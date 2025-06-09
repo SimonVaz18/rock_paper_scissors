@@ -1,5 +1,5 @@
 const options = ["🪨", "📄", "✂️"];
-const buttons = document.querySelectorAll("options.button");
+const buttons = document.querySelectorAll(".options button");
 const userChoiceDisplay = document.getElementById("user-choice");
 const computerChoiceDisplay = document.getElementById("computer-choice");
 const resultText = document.getElementById("result-text");
@@ -7,10 +7,10 @@ const resultText = document.getElementById("result-text");
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
         const userChoice = button.textContent;
-        const computerChoice = choices [Math.floor(random() * choices.length)];
+        const computerChoice = options[Math.floor(Math.random() * options.length)];
 
         userChoiceDisplay.textContent = `Your choice: ${userChoice}`;
-        computerChoiceDisplay.textContent = `Computer's choice: ${computerChocie}`;
+        computerChoiceDisplay.textContent = `Computer's choice: ${computerChoice}`;
 
         const result = decideWinner(userChoice, computerChoice);
         resultText.textContent = result;
@@ -23,13 +23,13 @@ buttons.forEach((button) => {
 });
 
 function decideWinner(user, computer) {
-    if (user === computer) return "It's a tie!"
+    if (user === computer) return "It's a tie!";
     if (
         (user === "📄" && computer === "🪨") ||
         (user === "🪨" && computer === "✂️") ||
         (user === "✂️" && computer === "📄")
     ) {
-        return "You win! ";
-    } 
-        return "You lose! "
+        return "You win!";
+    }
+    return "You lose!";
 }
