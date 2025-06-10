@@ -107,4 +107,26 @@ function endGame() {
 
     finalResultDisplay.textContent = message;
     totalWinsDisplay.textContent = `Games Won - You ${totalUserWins} | Computer: ${totalComputerWins}`;
+    restartButton.style.display = "inline-block";
+}
+
+/**
+ * Restart round and keep total score
+ */
+restartButton.addEventListener("click", resetGame);
+
+function resetGame() {
+    userScore = 0;
+    computerScore = 0;
+    round = 0;
+
+    userChoiceDisplay.textContent = "Your Choice:";
+    computerChoiceDisplay.textContent = "Computer's choice:"
+    resultText.textContent = "";
+    finalResultDisplay.textContent = "";
+    resultText.style.color = "";
+    scoreDisplay.textContent = "Score - You: 0 | Computer: 0";
+    roundDisplay.textContent = "Round: 0 / 10";
+
+    restartButton.style.display = "none";
 }
