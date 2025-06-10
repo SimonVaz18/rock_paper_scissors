@@ -42,7 +42,6 @@ buttons.forEach((button) => {
         const result = decideWinner(userChoice, computerChoice);
         resultText.textContent = result;
 
-        }
 
         /**
          * Change text colour when user wins, loses or ties
@@ -55,7 +54,7 @@ buttons.forEach((button) => {
             resultText.style.color = "red";
             computerScore++;
         } else {
-            resultText.style.color = "ffcc00";
+            resultText.style.color = "#ffcc00";
         }
 
         /** 
@@ -125,7 +124,7 @@ function resetGame() {
     round = 0;
 
     userChoiceDisplay.textContent = "Your Choice:";
-    computerChoiceDisplay.textContent = "Computer's choice:"
+    computerChoiceDisplay.textContent = "Computer's choice:";
     resultText.textContent = "";
     finalResultDisplay.textContent = "";
     resultText.style.color = "";
