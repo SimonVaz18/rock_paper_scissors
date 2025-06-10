@@ -1,6 +1,9 @@
 /**
  * Rock Paper Scissors Game - Best of 10
- * 
+ * Features:
+ * Tracks scores over 10 games
+ * Shows total games won
+ * Has a restart button to be used at end of round
  */
 
 /**
@@ -31,8 +34,13 @@ let round = 0;
 let totalUserWins = 0;
 let totalComputerWins = 0;
 
+/**
+ * M Logic
+ */
+
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
+        if (round >= 10) return;
         const userChoice = button.textContent;
         const computerChoice = options[Math.floor(Math.random() * options.length)];
 
