@@ -25,8 +25,8 @@ buttons.forEach((button) => {
 function decideWinner(user, computer) {
     if (user === computer) return "It's a tie!";
     if (
-        (user === "📄" && computer === "🪨") ||
         (user === "🪨" && computer === "✂️") ||
+        (user === "📄" && computer === "🪨") ||
         (user === "✂️" && computer === "📄")
     ) {
         return "You win!";
