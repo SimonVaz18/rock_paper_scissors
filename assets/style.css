@@ -12,14 +12,15 @@
 
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: var(--primary-font);
     background: linear-gradient(135deg, #1e1e2f, #212140);
     color: var(--primary-color);
     align-items: center;
     justify-content: center;
     margin: 0;
-    height: 100vh;
-    overflow: hidden;
 }
 
 
