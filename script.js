@@ -42,16 +42,20 @@ buttons.forEach((button) => {
         const result = decideWinner(userChoice, computerChoice);
         resultText.textContent = result;
 
+        }
+
         /**
          * Change text colour when user wins, loses or ties
          */
 
         if (result === "You win!") {
             resultText.style.color = "lightgreen";
+            userScore++;
         } else if (result === "You lose!") {
             resultText.style.color = "red";
+            computerScore++;
         } else {
-            result.Text.style.color = "ffcc00";
+            resultText.style.color = "ffcc00";
         }
 
         /** 
