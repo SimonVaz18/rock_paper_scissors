@@ -28,7 +28,7 @@ let userScore = 0;
 let computerScore = 0;
 let round = 0;
 
-let totalUserWwins = 0;
+let totalUserWins = 0;
 let totalComputerWins = 0;
 
 buttons.forEach((button) => {
@@ -63,6 +63,14 @@ buttons.forEach((button) => {
             resultText.style.animation = "glow 1.5s infinite alternate";
         }, 10);
 
+        /**
+         * Update scoreboard
+         */
+
+        round++;
+        scoreDisplay.textContent = `Score - You ${userScore} | Computer ${computerScore}`;
+        roundDisplay.textContent = `Round ${round} / 10`; 
+
         if (round === 10) {
             endGame();
         }
@@ -79,4 +87,24 @@ function decideWinner(user, computer) {
         return "You win!";
     }
     return "You lose!";
+}
+
+/**
+ * End of game after 10 rounds
+ */
+
+function endGame() {
+    let message; 
+    if (userScore > computerScore) {
+        message = "You won this game!"
+        totalUserWins++;
+    } else if (computerScore > userScore) {
+        message = "Computer won this game!";
+        totalComputerWins++;
+    } else {
+        message = "It's a draw!";
+    }
+
+    finalResultDisplay.textContent = message;
+    totalWinsDisplay.textContent = `Games Won - You ${totalUserWins} | Computer: ${totalComputerWins}`;
 }
