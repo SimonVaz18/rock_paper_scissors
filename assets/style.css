@@ -94,3 +94,9 @@ h1 {
     border-radius: 10px;
     cursor: pointer;
 }
+
+#score, #round, #final-result, #total-wins {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin: 5px 0;
+}

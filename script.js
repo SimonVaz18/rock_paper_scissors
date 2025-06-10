@@ -1,8 +1,26 @@
+/**
+ * DOM Element Selectors
+ */
+
 const options = ["🪨", "📄", "✂️"];
 const buttons = document.querySelectorAll(".options button");
+
 const userChoiceDisplay = document.getElementById("user-choice");
 const computerChoiceDisplay = document.getElementById("computer-choice");
 const resultText = document.getElementById("result-text");
+
+const scoreDisplay = document.getElementById("score");
+const roundDisplay = document.getElementById("round");
+const finalResultDisplay = document.getElementById("final-result");
+const totalWinsDisplay = document.getElementById("total-wins");
+const restartButton = document.getElementById("restart");
+
+let userScore = 0;
+let computerScore = 0;
+let round = 0;
+
+let totalUserWwins = 0;
+let totalComputerWins = 0;
 
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
