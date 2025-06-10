@@ -100,3 +100,17 @@ h1 {
   color: var(--secondary-color);
   margin: 5px 0;
 }
+
+/* Footer styles */
+
+.footer {
+    margin-top: 30px;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #444;
+    columns: var(--secondary-color);
+    font-family: var(--secondary-font);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+}
