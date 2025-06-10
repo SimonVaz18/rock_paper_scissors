@@ -81,3 +81,16 @@ h1 {
     text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
     animation: glow 1.5s infinite alternate;
 }
+
+/* Restart display */
+
+#restart {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--highlight-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
