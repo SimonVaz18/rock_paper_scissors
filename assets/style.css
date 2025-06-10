@@ -10,6 +10,7 @@
     --highlight-color: #5e3023;
 }
 
+/* Styling for game */
 
 body {
     display: flex;
@@ -21,6 +22,13 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
