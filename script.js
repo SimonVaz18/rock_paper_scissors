@@ -1,4 +1,9 @@
 /**
+ * Rock Paper Scissors Game - Best of 10
+ * 
+ */
+
+/**
  * DOM Element Selectors
  */
 
@@ -15,6 +20,10 @@ const finalResultDisplay = document.getElementById("final-result");
 const totalWinsDisplay = document.getElementById("total-wins");
 const restartButton = document.getElementById("restart");
 
+
+/**
+ * Game Start Figures
+ */
 let userScore = 0;
 let computerScore = 0;
 let round = 0;
@@ -46,13 +55,17 @@ buttons.forEach((button) => {
         }
 
         /** 
-         * Reset animation
+         * Reset animation glow for result
          * */ 
 
         resultText.style.animation = "none";
         setTimeout(() => {
             resultText.style.animation = "glow 1.5s infinite alternate";
         }, 10);
+
+        if (round === 10) {
+            endGame();
+        }
     });
 });
 
