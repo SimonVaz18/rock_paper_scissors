@@ -15,6 +15,22 @@ buttons.forEach((button) => {
         const result = decideWinner(userChoice, computerChoice);
         resultText.textContent = result;
 
+        /**
+         * Change text colour when user wins, loses or ties
+         */
+
+        if (result === "You win!") {
+            resultText.style.color = "lightgreen";
+        } else if (result === "You lose!") {
+            resultText.style.color = "red";
+        } else {
+            result.Text.style.color = "ffcc00";
+        }
+
+        /** 
+         * Reset animation
+         * */ 
+
         resultText.style.animation = "none";
         setTimeout(() => {
             resultText.style.animation = "glow 1.5s infinite alternate";
