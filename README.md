@@ -102,3 +102,37 @@ The design is intended to be playful and colourful, using emjois as game tokens 
   - Tracks how many full matches (best of 10) the player and the computer have won.
   - Displayed as: Games Won - You: X | Computer: Y
   - Designed to encourage replay and competition.
+
+### 7. Footer
+
+  - The footer section describes to the rules of the game and how to play
+  - 
+
+---
+
+## Technologies Used
+
+- **HTML5** – Provides the structure and content of the game interface.
+- **CSS3** – Handles layout, styling, animations, and color effects.
+- **JavaScript (ES6+)** – Powers the core game logic, scorekeeping, and user interactions.
+
+---
+
+## Testing
+
+The site has been tested across multiple browsers including Chrome, Safari and Edge to ensure cross-browser compatibility. Additionally, it was also tested on various screen sizes to ensure all funtionality is fully responsive. 
+
+## Code Validation
+
+### HTML Validation
+
+![html-checker](assets/images/html-checker.png)
+
+
+
+## Deployment 
+This site was deployed to Github pages. The steps to deploy are as follows:
+- Once code was ready to be pushed to Github, I used the commandsv 'Git add', 'Git commit -m "-"', 'Git push'
+- In the Github repository, navigate to the Settings tab
+- Select the pages window and fthe source section drop-down menu, select the Master Branch
+- Now the page will automatically be refreshed and shown
