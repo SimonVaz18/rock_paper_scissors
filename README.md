@@ -41,3 +41,64 @@ The design is intended to be playful and colourful, using emjois as game tokens 
 ---
 
 ## Features 
+
+### 1. Game Interface
+
+- **Emoji Buttons**  
+  Players choose from 🪨 (rock), 📄 (paper), or ✂️ (scissors) using clickable emoji buttons.
+
+- **Choice Display**  
+  Shows both the player's and computer's choices after each round.
+
+- **Responsiveness**  
+  Layout adjusts well to different screen sizes, ensuring a smooth user experience.
+
+### 2. Game Flow 
+
+- **Single Round Execution**  
+  Clicking a button triggers one round of the game.
+
+- **Computer Logic**  
+  The computer randomly selects one of the three options.
+
+- **Round Limiter**  
+  After 10 rounds, the game ends automatically, and input is disabled until reset.
+
+### 3. Score Tracking
+
+- **Round-Based Scoring**  
+    - Both user and computer scores update in real-time.
+    - Score is displayed as: Score - You: X | Computer: Y.
+
+- **Round Counter**  
+  Displays the current round as: Round X / 10.
+
+### 4. Result Display and Animation 
+
+- **Immediate Feedback**
+  Result text appears after each round:
+  - "You win!"
+  - "You lose!"
+  - "It's a tie!"
+
+- **Color Coding**
+  - 💚 Win: Light Green
+  - 🔴 Loss: Red
+  - 🟡 Tie: Yellow
+
+- **Glowing Animation**  
+  The result message gently pulses for added visual feedback.
+
+### 5. Game Restart
+
+- ** Restart Button**
+  - Appears only after a full 10-round game.
+  - Resets the current round count and scores.
+  - Keeps the overall win/loss tally intact.
+
+### 6. Persistant Totals
+
+- **Cumulative Game Wins**
+  - Tracks how many full matches (best of 10) the player and the computer have won.
+  - Displayed as: Games Won - You: X | Computer: Y
+  - Designed to encourage replay and competition.
