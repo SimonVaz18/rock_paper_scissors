@@ -7,7 +7,7 @@
     --secondary-font: "Nunito", sans-serif;
     --primary-color: #4ddbdb;
     --secondary-color: #f3e9dc;
-    --highlight-color: #5e3023;
+    --highlight-color: #7FFFD4; 
 }
 
 /* Styling for game */
@@ -99,7 +99,7 @@ h1 {
     padding: 10px 20px;
     font-size: 1rem;
     background-color: var(--highlight-color);
-    color: white;
+    color: black;
     border: none;
     border-radius: 10px;
     cursor: pointer;

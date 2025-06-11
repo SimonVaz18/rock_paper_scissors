@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Rock Paper Scissors Game - Best of 10
  * Features:
@@ -9,7 +11,6 @@
 /**
  * DOM Element Selectors
  */
-
 const options = ["🪨", "📄", "✂️"];
 const buttons = document.querySelectorAll(".options button");
 
@@ -35,9 +36,9 @@ let totalUserWins = 0;
 let totalComputerWins = 0;
 
 /**
- * M Logic
+ * Main Game Logic that handles button click
+ * Compares choices, determins winner and updates scores & UI
  */
-
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
         if (round >= 10) return;
@@ -54,7 +55,6 @@ buttons.forEach((button) => {
         /**
          * Change text colour when user wins, loses or ties
          */
-
         if (result === "You win!") {
             resultText.style.color = "lightgreen";
             userScore++;
@@ -66,9 +66,8 @@ buttons.forEach((button) => {
         }
 
         /** 
-         * Reset animation glow for result
+         * Reset animation
          * */ 
-
         resultText.style.animation = "none";
         setTimeout(() => {
             resultText.style.animation = "glow 1.5s infinite alternate";
@@ -77,7 +76,6 @@ buttons.forEach((button) => {
         /**
          * Update scoreboard
          */
-
         round++;
         scoreDisplay.textContent = `Score - You ${userScore} | Computer ${computerScore}`;
         roundDisplay.textContent = `Round ${round} / 10`; 
@@ -87,7 +85,9 @@ buttons.forEach((button) => {
         }
     });
 });
-
+/**
+ * Determines winner of a round
+ */
 function decideWinner(user, computer) {
     if (user === computer) return "It's a tie!";
     if (
@@ -101,13 +101,13 @@ function decideWinner(user, computer) {
 }
 
 /**
- * End of game after 10 rounds
+ * Ends the game after 10 rounds
+ * Updates final result display and shows overall game wins
  */
-
 function endGame() {
     let message; 
     if (userScore > computerScore) {
-        message = "You won this game!"
+        message = "You won this game!";
         totalUserWins++;
     } else if (computerScore > userScore) {
         message = "Computer won this game!";
@@ -122,10 +122,8 @@ function endGame() {
 }
 
 /**
- * Restart round and keep total score
+ * Resets the game and keeps total score
  */
-restartButton.addEventListener("click", resetGame);
-
 function resetGame() {
     userScore = 0;
     computerScore = 0;
@@ -141,3 +139,5 @@ function resetGame() {
 
     restartButton.style.display = "none";
 }
+
+restartButton.addEventListener("click", resetGame);
