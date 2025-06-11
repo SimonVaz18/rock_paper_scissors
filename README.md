@@ -126,9 +126,38 @@ The site has been tested across multiple browsers including Chrome, Safari and E
 
 ### HTML Validation
 
-![html-checker](assets/images/html-checker.png)
+![html-checker]()
 
+ ### CSS Validation
 
+ ### JavaScript Validation
+
+ ### Bugs
+
+ - During testing, I found that once 10 rounds had been played with the game finished and a winner decided, if the user continued to choose an option the round number would continue to increase e.g. Round 12/10. To mitigate this, I added a guard clause that protects the game logic from running once 10 rounds have already been played.
+ - When executing the lighthouse testing, the SEO score was 90 due to no Meta description being present. Once I added a Meta the score increased to 100.
+ - The 'Play Again' button had a brown background with white text. Upon review, these colours were not particularly enticing for the user to continue playing. As a result, I changed the colours to a shade of green with black text. 
+
+ ### Unfixed Bugs
+
+ - No unfixed bugs. 
+
+ ### Improvements
+
+ - **Sound Effects** - Add fun sounds when chosing moves and seeing results.
+ - **Imrpove compuer logic** - Introduce smarter strategy to the computer opponent.
+ -- **Theme Options** - Allow users to choose different themes relating to UI.
+ - **Local Storage** - Persist total wins/losses even after refreshing or reopening the browser.
+
+## Lighthouse Testing
+
+### Lighthouse Test Desktop
+![lighthouse-homepage](assets/images/lighthouse_scores_game.png)
+
+### Lighthouse Test Mobile
+![lighthouse-homepage](assets/images/lighthouse_score_mobile.png)
+
+---
 
 ## Deployment 
 This site was deployed to Github pages. The steps to deploy are as follows:
@@ -136,3 +165,12 @@ This site was deployed to Github pages. The steps to deploy are as follows:
 - In the Github repository, navigate to the Settings tab
 - Select the pages window and fthe source section drop-down menu, select the Master Branch
 - Now the page will automatically be refreshed and shown
+
+---
+
+## Credits 
+
+Throughout the site build I used the following sources:
+- [W3Schools.com](https://www.w3schools.com/)
+- References from the Code Instutute Love Maths Project
+- 
