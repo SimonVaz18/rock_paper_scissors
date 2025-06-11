@@ -117,7 +117,7 @@ h1 {
     padding: 15px 20px;
     background-color: rgba(0, 0, 0, 0.5);
     border-top: 1px solid #444;
-    columns: var(--secondary-color);
+    color: var(--primary-color);
     font-family: var(--secondary-font);
     text-align: center;
     font-size: 1rem;

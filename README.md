@@ -163,7 +163,7 @@ The site has been tested across multiple browsers including Chrome, Safari and E
 This site was deployed to Github pages. The steps to deploy are as follows:
 - Once code was ready to be pushed to Github, I used the commandsv 'Git add', 'Git commit -m "-"', 'Git push'
 - In the Github repository, navigate to the Settings tab
-- Select the pages window and fthe source section drop-down menu, select the Master Branch
+- Select the pages window and the source section drop-down menu, select the Master Branch
 - Now the page will automatically be refreshed and shown
 
 ---
@@ -172,5 +172,5 @@ This site was deployed to Github pages. The steps to deploy are as follows:
 
 Throughout the site build I used the following sources:
 - [W3Schools.com](https://www.w3schools.com/)
+- https://getemoji.com/
 - References from the Code Instutute Love Maths Project
-- 
