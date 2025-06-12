@@ -105,8 +105,8 @@ The design is intended to be playful and colourful, using emjois as game tokens 
 
 ### 7. Footer
 
-  - The footer section describes to the rules of the game and how to play
-  - 
+  - The footer section describes the rules of the game and how to play.
+  - The styling of the footer is in keeping with the rest of the webpage.
 
 ---
 
@@ -122,15 +122,37 @@ The design is intended to be playful and colourful, using emjois as game tokens 
 
 The site has been tested across multiple browsers including Chrome, Safari and Edge to ensure cross-browser compatibility. Additionally, it was also tested on various screen sizes to ensure all funtionality is fully responsive. 
 
+### Manual Testing
+
+| **Test No.** | **Test Scenario**                                  | **Test Steps**                                           | **Expected Result**                                                         | **Pass/Fail**                 |   |
+| ------------ | -------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------- | - |
+| 1            | Game starts with correct UI                    | Open game in browser                                     | Score: 0–0, Round: 0 / 10, Restart button hidden, result empty              | ✅                             |   |
+| 2            | Player selects an emoji                            | Click on 🪨, 📄, or ✂️ button                            | Player and computer choices display, result shows outcome, score updates    | ✅                             |   |
+| 3            | Computer randomly selects option                   | Play several rounds                                      | Computer choice varies randomly                                             | ✅                             |   |
+| 4            | Score updates  after win                          | Select option that beats the computer's (e.g., 📄 vs 🪨) | "You win!" message, user score increases by 1                               | ✅                             |   |
+| 5            | Score updates  after loss                      | Select option that loses to computer's (e.g., ✂️ vs 🪨)  | "You lose!" message, computer score increases by 1                          | ✅                             |   |
+| 6            | Score updates after tie                          | Select same option as computer (e.g., 📄 vs 📄)          | "It's a tie!" message, no score change                                      | ✅                             |   |
+| 7            | Round counter updates                          | Play one round                                           | Round counter increments (e.g., Round 1 / 10)                               | ✅                             |   |
+| 8            | Game ends after 10 rounds                          | Play 10 rounds                                           | Input disabled (clicks ignored), final result shown, restart button appears | ✅                             |   |
+| 9            | Restart button resets match but keeps total scores | Click restart button after 10 rounds                     | Round and current scores reset to 0, total wins remain unchanged            | ✅                             |   |
+| 10           | UI is responsive on different screen sizes         | Resize browser window or view on mobile                  | Layout adjusts (no broken UI, all elements accessible)                      | ✅                             |   |
+| 11           | No input accepted after round 10                   | Click any emoji after round 10 is complete               | No change in display or score                                               | ✅                             |   |
+
+ 
+
 ## Code Validation
 
 ### HTML Validation
 
-![html-checker]()
+![HTML checker](assets/images/html_checker_rock.png)
 
  ### CSS Validation
 
+ ![CSS checker](assets/images/css_checker_rock.png)
+
  ### JavaScript Validation
+
+ ![JavaSCript Validation](assets/images/javascript_validation_rock.png)
 
  ### Bugs
 
