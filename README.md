@@ -12,6 +12,7 @@ View live github project +++++++++++++++++++++++++
 - Features
 - Technologies Used
 - Testing
+- Code Validation
 - Bugs
 - Future Improvements
 - Deployment
@@ -81,7 +82,7 @@ The design is intended to be playful and colourful, using emjois as game tokens 
   - "You lose!"
   - "It's a tie!"
 
-- **Color Coding**
+- **Colour Coding**
   - 💚 Win: Light Green
   - 🔴 Loss: Red
   - 🟡 Tie: Yellow
@@ -113,8 +114,8 @@ The design is intended to be playful and colourful, using emjois as game tokens 
 ## Technologies Used
 
 - **HTML5** – Provides the structure and content of the game interface.
-- **CSS3** – Handles layout, styling, animations, and color effects.
-- **JavaScript (ES6+)** – Powers the core game logic, scorekeeping, and user interactions.
+- **CSS3** – Handles layout, styling, animations, and colour effects.
+- **JavaScript** – Powers the core game logic, scorekeeping, and user interactions.
 
 ---
 
