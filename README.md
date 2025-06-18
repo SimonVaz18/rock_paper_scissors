@@ -1,7 +1,7 @@
 # 🪨📄✂️ Rock Paper Scissors
 Project 2 - Simon Vaz
 
-View live github project +++++++++++++++++++++++++
+View live github project (https://simonvaz18.github.io/rock_paper_scissors/)
 
 ---
 
